@@ -27,6 +27,8 @@ if __name__ == '__main__':
 
     # Time between mouse moves (seconds)
     WAIT_TIME = 5
+
+    # Time for the mouse to travel from point to point
     MOUSE_SPEED = 2
 
     # Looping program till keyboard interupt
