@@ -10,13 +10,13 @@ if __name__ == '__main__':
 
     # This script will move the mouse to these points at the set time intervals
     #   (0,0)                                           (X, 0)
-    #   |----------------------------------------------------|
+    #   +----------------------------------------------------+
     #   |   TL(25%, 25%)                      TR(75%, 25%)   |
     #   |                                                    |
     #   |                                                    |
     #   |                                                    |
     #   |   BL(25%, 75%                       BR(75%, 75%)   |
-    #   |----------------------------------------------------|
+    #   +----------------------------------------------------+
     #   (0, Y)                                           (X,Y)
 
     # Denoting the position on the screen to move the mouse to
@@ -28,10 +28,10 @@ if __name__ == '__main__':
     # Time between mouse moves (seconds)
     WAIT_TIME = 5
 
-    # Time for the mouse to travel from point to point
+    # Time for the mouse to travel from point to point (seconds)
     MOUSE_SPEED = 2
 
-    # Looping program till keyboard interupt
+    # Looping program till keyboard interrupt
     try:
         while True:
             pyautogui.moveTo(pos_TL[0], pos_TL[1], MOUSE_SPEED)
@@ -45,6 +45,8 @@ if __name__ == '__main__':
 
             pyautogui.moveTo(pos_BR[0], pos_BL[1], MOUSE_SPEED)
             time.sleep(WAIT_TIME)
+
+            pyautogui.press('shift')
 
     except KeyboardInterrupt:
         print("\nClosing mouse wiggler...")
