@@ -1,8 +1,5 @@
 # Mouse-Wiggler
-
-For when you REALLY don't want your screen to sleep. Even when your job prevents you from turning computer/screen sleeping on idle off.
-
-Kick your feet back and enjoy home office
+Provides just enough activity for your computer to prevent it sleeping, and for other programs to think that you are online.
 
 ## Dependencies
 - pyautogui
